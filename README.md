@@ -1,6 +1,6 @@
-#Photo Caption Generation using Global and Local Attention
+# Photo Caption Generation using Global and Local Attention
 
-Author(s): 
+## Author(s): 
 Poornapragna Vadiraj, Varun Bhaseen, Mirsaeid Abolghasemi
 Deep Learning CMPE 258 - Term Project - Professor Vijay Eranti - Spring 2020
  
