@@ -14,6 +14,14 @@ It is significantly more demanding than traditional vision tasks recognition of 
 First, well formed structured output space natural language sentences are considerably more challenging than just a set of class labels to predict. 
 Secondly, this dynamic output space enables a more thin understanding of the visual scenario, and therefore also a more informative one visual scene analysis to do well on this task.
 
- 
+## Issues with Traditional Methods of Image Captioning:
+
+During generating the next word of the caption, this word is usually describing only a part of the image. 
+Capturing the essence of the entire input image is unable
+Using the full representation of the image “h” to help in the process of generating each word cannot produce different words for different parts of the image. 
+Using Attention mechanism to solve these problems, by focusing on certain important features that may be present in the image.
+Eg: HAARCascade
 
 ![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/pasted%20image%200.png?raw=true)
+
+
