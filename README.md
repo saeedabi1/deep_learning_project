@@ -62,6 +62,7 @@ The Image Model (VGG-16) defining which pre-trained:
 * Only the convolutional part of the VGG16 model is downloaded which is just 57 MB if include_top=False
 * Using fully connected layers in this pre-trained model, therefore downloading the full model is needed.
 
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/unnamed.png?raw=true)
 
 
 ## Global or Luong’s Attention Implementation:
@@ -101,6 +102,7 @@ The Image Model (VGG-16) defining which pre-trained:
 ![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.08.25%20PM.png?raw=true)
 
 
+
 ![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.08.39%20PM.png?raw=true)
 
 
@@ -112,6 +114,38 @@ The Image Model (VGG-16) defining which pre-trained:
 * Few key points to remember while making predictions.
   * Stop predicting when the model predicts the end token.
   * Store the attention weights for every time step.
+
+
+## Greedy Search:
+
+* Maximum Likelihood Estimation (MLE) i.e. 
+* Selecting that word which is most likely according to the model for the given input. 
+* It’s also called as Greedy Search, as we greedily select the word with maximum probability.
+
+
+## Beam Search:
+
+* Taking top k predictions
+* Feed them again in the model
+* Sort them using the probabilities returned by the model. 
+* So, the list will always contain the top k predictions. 
+* Taking the one with the highest probability
+* Going through it till we encounter <end> or reach the maximum caption length.
+
+
+## BLEU Score:
+
+* The BLEU measure to evaluate the result of the test set generated captions. 
+* The BLEU is simply taking the fraction of n-grams in the predicted sentence that appears in the ground-truth.
+* BLEU is a well-acknowledged metric to measure the similarity of one hypothesis sentence to multiple reference sentences. 
+* Given a single hypothesis sentence and multiple reference sentences, it returns value between 0 and 1. 
+* The metric close to 1 means that the two are very similar.
+
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.23.58%20PM.png?raw=true)
+
+
+
 
 
 
