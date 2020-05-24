@@ -110,8 +110,8 @@ The Image Model (VGG-16) defining which pre-trained:
 * Except we don’t use Teacher Forcing here. 
 * The input to Decoder at each time step is its previous predictions, along with the hidden state and the ENCODER output.
 * Few key points to remember while making predictions.
- * Stop predicting when the model predicts the end token.
- * Store the attention weights for every time step.
+  * Stop predicting when the model predicts the end token.
+  * Store the attention weights for every time step.
 
 
 
