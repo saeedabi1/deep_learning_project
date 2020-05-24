@@ -35,16 +35,17 @@ This is why an Attention mechanism can be helpful.
 ## Data
 
 To address this problem, there are many open source datasets available, such as 
-** Flickr 8k (containing 8k images)
-** Flickr 30k (containing 30k images)
-** MS COCO (containing 180k images), etc. 
+* Flickr 8k (containing 8k images)
+* Flickr 30k (containing 30k images)
+* MS COCO (containing 180k images), etc. 
 
 But we have used the Flickr 8k dataset for this case study which you can access from here. 
 
 ** Training a model with a large number of images on a system that is not a very high end PC / Laptop may not be feasible either.
 
-** This dataset contains 8000 images with 5 captions each (as we already saw in the Introduction section that an image can have multiple captions, all of which are relevant at the same time). 
-** These images are bifurcated as follows: Training Set — 6000 images, Dev Set — 1000 images, and Test Set — 1000 images.
+* This dataset contains 8000 images with 5 captions each (as we already saw in the Introduction section that an image can have multiple captions, all of which are relevant at the same time).
+
+* These images are bifurcated as follows: Training Set — 6000 images, Dev Set — 1000 images, and Test Set — 1000 images.
 
 
 
