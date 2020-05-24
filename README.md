@@ -208,6 +208,33 @@ The supplementary material might include:
 
 ## References:
 
+[1] Peter Anderson, Basura Fernando, Mark Johnson, and Stephen Gould. Spice: Semantic propositional image caption evaluation. In ECCV, 2016.
 
+[2] Peter Anderson, Xiaodong He, Chris Buehler, Damien Teney, Mark Johnson, Stephen Gould, and Lei Zhang. Bottom-up and top-down attention for image captioning and visual question answering. In CVPR, 2018.
+
+[3] Jimmy Lei Ba, Jamie Ryan Kiros, and Geoffrey E. Hinton. Layer normalization. arXiv preprint arXiv:1607.06450, 2016.
+
+[4] Hedi Ben-younes, Remi Cadene, Matthieu Cord, and Nicolas Thome. Mutan: Multimodal tucker fusion for visual question answering. In ICCV, 2017.
+
+[5] Samy Bengio, Oriol Vinyals, Navdeep Jaitly, and Noam Shazeer. Scheduled sampling for sequence prediction with recurrent neural networks. In NeurIPS, 2015.
+
+[6] Long Chen, Hanwang Zhang, Jun Xiao, Liqiang Nie, Jian Shao, Wei Liu, and Tat-Seng Chua. Sca-cnn: Spatial and channel-wise attention in convolutional networks for image captioning. In CVPR, 2017.
+
+[7] Yangyu Chen, Shuhui Wang, Weigang Zhang, and Qingming Huang. Less is more: Picking informative frames for video captioning. In ECCV, 2018.
+
+[8] Marco Pedersoli and Thomas Lucas and Cordelia Schmid and Jakob Verbeek: Areas of Attention for Image Captioning, arXiv, 2016.
+
+[9] Sen He, Wentong Liao, Hamed R. Tavakoli, Michael Yang, Bodo Rosenhahn, and Nicolas Pugeault: Image Captioning through Image Transformer, arXiv, 2020.
+
+
+## Links we referred to:
+
+* Local Attention : https://arxiv.org/pdf/1502.03044.pdf
+* Global Attention : https://arxiv.org/pdf/1508.04025.pdf
+* https://www.appliedaicourse.com/lecture/11/applied-machine-learning-online-course/4150/attention-models-in-deep-learning/8/module-8-neural-networks-computer-vision-and-deep-learning
+* Tensorflow Blog: https://www.tensorflow.org/tutorials/text/image_captioning
+* https://machinelearningmastery.com/calculate-bleu-score-for-text-python/
+* https://towardsdatascience.com/intuitive-understanding-of-attention-mechanism-in-deep-learning-6c9482aecf4f
+* Neural Machine Translation(Research Paper):https://arxiv.org/pdf/1409.0473.pdf
 
 
