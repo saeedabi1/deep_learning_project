@@ -41,7 +41,7 @@ To address this problem, there are many open source datasets available, such as
 
 But we have used the Flickr 8k dataset for this case study which you can access from here. 
 
-** Training a model with a large number of images on a system that is not a very high end PC / Laptop may not be feasible either.
+* Training a model with a large number of images on a system that is not a very high end PC / Laptop may not be feasible either.
 
 * This dataset contains 8000 images with 5 captions each (as we already saw in the Introduction section that an image can have multiple captions, all of which are relevant at the same time).
 
