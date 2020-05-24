@@ -66,6 +66,33 @@ The Image Model (VGG-16) defining which pre-trained:
 
 ## Global or Luong’s Attention Implementation:
 
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.07.17%20PM.png?raw=true)
+
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.07.27%20PM.png?raw=true)
+
+
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.07.42%20PM.png?raw=true)
+
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.07.57%20PM.png?raw=true)
+
+
+## Training steps:
+
+* The ENCODER output, hidden state(initialised to 0) and the DECODER input(which is the <start> token) are passed to the DECODER.
+* The DECODER returns the predictions and the DECODER hidden state.
+* The DECODER hidden state is then passed back into the model and the predictions are used to calculate the loss.
+* While training, we use the Teacher Forcing technique, to decide the next input of the DECODER.
+* Teacher Forcing is the technique where the target word is passed as the next input to the DECODER. 
+* This technique helps to learn the correct sequence or correct statistical properties from the sequence, quickly.
+* Final step is to calculate the Gradient and apply it to the optimizer and backpropagate.
+
+## Testing Step:
+
+* It is similar to training step, just that we do not update the gradients, and provide the predicted output as decoder input to next RNN cell at next time steps.
+* Test step is required to find out whether the model built is overfitting or not.
 
 
 
