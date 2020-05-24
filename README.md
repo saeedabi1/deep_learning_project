@@ -96,6 +96,22 @@ The Image Model (VGG-16) defining which pre-trained:
 
 
 
+## TensorBoard Summary	
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.08.25%20PM.png?raw=true)
+
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.08.39%20PM.png?raw=true)
+
+
+## Evaluation:
+
+* The evaluate function is similar to the training loop
+* Except we don’t use Teacher Forcing here. 
+* The input to Decoder at each time step is its previous predictions, along with the hidden state and the ENCODER output.
+* Few key points to remember while making predictions.
+* * Stop predicting when the model predicts the end token.
+* * Store the attention weights for every time step.
 
 
 
