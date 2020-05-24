@@ -48,4 +48,27 @@ But we have used the Flickr 8k dataset for this case study which you can access 
 * These images are bifurcated as follows: Training Set — 6000 images, Dev Set — 1000 images, and Test Set — 1000 images.
 
 
+## Defining VGG Model:
+
+The Image Model (VGG-16) defining which pre-trained: 
+* The code below generates an instance of the VGG16 model utilizing the Keras API. 
+* If we don't already have these, this immediately installs the appropriate data.
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.11.34%20PM.png?raw=true)
+
+* The VGG16 model was pre-trained for classification of photos on the ImageNet data-set. 
+* The VGG16 model contains a convolutionary part and a full-connected (or dense) part that is used to classify the image.
+* he whole VGG16 model is downloaded which is about 528 MB if include_top=True.
+* Only the convolutional part of the VGG16 model is downloaded which is just 57 MB if include_top=False
+* Using fully connected layers in this pre-trained model, therefore downloading the full model is needed.
+
+
+
+## Global or Luong’s Attention Implementation:
+
+
+
+
+
+
 
