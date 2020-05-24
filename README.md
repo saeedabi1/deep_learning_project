@@ -48,13 +48,19 @@ But we have used the Flickr 8k dataset for this case study which you can access 
 * These images are bifurcated as follows: Training Set — 6000 images, Dev Set — 1000 images, and Test Set — 1000 images.
 
 
+
+
 ## Defining VGG Model:
 
 The Image Model (VGG-16) defining which pre-trained: 
 * The code below generates an instance of the VGG16 model utilizing the Keras API. 
 * If we don't already have these, this immediately installs the appropriate data.
 
+
+
 ![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.11.34%20PM.png?raw=true)
+
+
 
 * The VGG16 model was pre-trained for classification of photos on the ImageNet data-set. 
 * The VGG16 model contains a convolutionary part and a full-connected (or dense) part that is used to classify the image.
@@ -65,7 +71,8 @@ The Image Model (VGG-16) defining which pre-trained:
 ![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/unnamed.png?raw=true)
 
 
-## Global or Luong’s Attention Implementation:
+
+
 
 ![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.07.17%20PM.png?raw=true)
 
@@ -145,6 +152,61 @@ The Image Model (VGG-16) defining which pre-trained:
 ![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.23.58%20PM.png?raw=true)
 
 
+
+![alt text](https://github.com/saeedabi1/deep_learning_project/blob/master/pictures/Screen%20Shot%202020-05-23%20at%205.28.24%20PM.png?raw=true)
+
+
+
+
+
+## Conclusion:
+
+* This is an example where the distribution of the train and test sets will be very different and no Machine Learning model will deliver good performance in the world in such cases. 
+* Overall, we have to admit that our simple first-cut model does a good job of producing captions for pictures, without any stringent hyper-parameter tuning.
+* We have to recognize that the photos used for research have to be semantically linked to those used in model training. 
+* For eg, if we train our model on the photos of cats, dogs, etc., we don't have to check it on airplane photographs, waterfalls, etc. 
+* The result for Beam Search was generally found to be better than Greedy Approach.
+
+
+
+## Lessons Learned
+
+* We were getting very poor accuracy at first 
+* The results only improved after we did the following:
+  * Doing more hyperparameter tuning
+    * learning rate, batch size
+    * number of layers
+    * number of units
+    * dropout rate
+    * batch normalisation
+  * For tuning Method 1’s  Model architecture:
+    * Adding Batch Normalization Layer
+    * Dropouts
+    * Early stopping
+
+
+## Supplemental Material used and submitted
+
+The supplementary material might include:
+* Notebook with:
+  * Training
+  * Testing
+  * Validation
+* Dataset
+* Checkpoint Files
+* Source code of web app
+* Video
+* Tensorboard visualizations
+
+
+# Related Work:
+
+* Image captioning has been extensively studied recently with encoder-decoder versions[1, 2, 3, 4, 5] 
+* A CNN processes the input image in its basic form to transform it into a vector representation which is used as the initial input for an RNN. Given the previous word, the RNN sequentially predicts the next word in the caption without limiting the temporal dependence to a fixed order, as in n-gram-based approaches. 
+* The representation of the CNN image can be entered in different ways in the RNN.While some authors [6, 7] Use this only to calculate the initial RNN status, while others enter it in each RNN iteration [8, 9].
+
+
+## References:
 
 
 
